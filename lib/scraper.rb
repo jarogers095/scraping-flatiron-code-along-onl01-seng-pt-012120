@@ -7,8 +7,7 @@ class Scraper
   
   
   def get_page()
-    return Nokigiri::HTML()
-    
+    return Nokigiri::HTML("http://learn-co-curriculum.github.io/site-for-scraping/courses")
   end
   
   def get_courses()
