@@ -5,6 +5,22 @@ require_relative './course.rb'
 
 class Scraper
   
+  
+  def get_page()
+    return Nokigiri::HTML()
+    
+  end
+  
+  def get_courses()
+    
+  end
+  
+  def make_courses()
+    
+  end
+  
+  
+  
   def print_courses
     self.make_courses
     Course.all.each do |course|
