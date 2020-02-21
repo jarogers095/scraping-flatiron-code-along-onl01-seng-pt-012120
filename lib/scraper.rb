@@ -20,9 +20,6 @@ class Scraper
       a_course.title = course.css("h2").text.strip
       a_course.schedule = course.css(".date").text.strip
       a_course.description = course.css("p").text.strip
-      puts a_course.title 
-      puts a_course.schedule 
-      puts a_course.description
     end
   end
   
