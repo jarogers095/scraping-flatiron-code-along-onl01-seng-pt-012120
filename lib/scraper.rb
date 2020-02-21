@@ -10,8 +10,8 @@ class Scraper
     return Nokogiri::HTML("http://learn-co-curriculum.github.io/site-for-scraping/courses")
   end
   
-  def get_courses(html_doc)
-    return html_doc.css("#course-grid > section > article")
+  def get_courses()
+    return get_page().html_doc.css("#course-grid > section > article")
   end
   
   def make_courses()
