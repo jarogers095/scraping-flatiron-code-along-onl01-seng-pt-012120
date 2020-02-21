@@ -11,7 +11,7 @@ class Scraper
   end
   
   def get_courses(html_doc)
-    return html_doc.css("#course-grid > section > article:nth-child(1)")
+    return html_doc.css("#course-grid > section > article")
   end
   
   def make_courses()
