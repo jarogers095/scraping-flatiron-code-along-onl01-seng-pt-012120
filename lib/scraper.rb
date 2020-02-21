@@ -11,7 +11,7 @@ class Scraper
   end
   
   def get_courses()
-    return get_page().html_doc.css("#course-grid > section > article")
+    return get_page().css("#course-grid > section > article")
   end
   
   def make_courses()
