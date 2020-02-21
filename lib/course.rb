@@ -8,8 +8,9 @@ class Course
     @description = description
     @@courses << self
   end
-
-
-
+  
+  def self.all()
+    return @@courses
+  end
 end
 
